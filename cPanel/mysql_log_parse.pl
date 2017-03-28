@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+
 ####################################################
 # MySQL "general log" parser
 # for cPanel servers version 0.2
@@ -7,6 +8,7 @@
 # Usage:
 # mysql_log_parse.pl MySQL_log_filename top_length
 ####################################################
+
 use strict; use Time::Local;
 my @CID=(1); my @DBName=("Unknown"); my @MySQLUserName=("Unknown"); my @QueriesNumber=(0);
 my @CpanelUserName=("Unknown"); my %currhash = (); my %unknownhash = ();
